@@ -1,0 +1,168 @@
+html {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) 100%), url(../img/beer-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Arvo', sans-serif;
+    font-weight: 200;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    color: #F1A66A;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1.4em;
+    color: #F1A66A;
+    margin-top: 0em;
+    margin-bottom: 1.0em;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 10% auto;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 3%;
+    border-radius: 10px;
+    border: 2px solid #F1A66A;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FEE2C8;
+    font-size: 1.2em;
+}
+
+#searchButton {
+    padding: 4%;
+    display: block;
+    margin: 1.35em auto;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F1A66A;
+    font-size: 1.1em;
+}
+
+#searchButton:hover {
+    background-color: #FEE2C8;
+}
+
+#beerResult {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+    overflow: auto;
+}
+
+#beerResult span {
+    display: block;
+    padding: 10px 0;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 2px solid #F1A66A;
+    border-radius: 100px;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+#beerResult span > p {
+    font-size: 30px;
+    color: #F1A66A;
+    padding-top: 35px;
+}
+
+#beerResult h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #F1A66A;
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+}
+
+#beerResult p {
+    color: #F1A66A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    margin: 0 6%;
+    line-height: 1.7;
+}
+
+p#brewery {
+    margin-bottom: 1.2em;
+    font-style: italic;
+}
+
+footer {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+}
+
+footer p {
+    color: #F1A66A;
+    font-size: 0.7em;
+}
+
+@media screen and (min-width: 640px) {
+    #searchButton {
+    padding: 3%;
+}
+
+}
+
+@media screen and (min-width: 900px) {
+    input[type="text"] {
+    width: 40%;
+        padding: 1%;
+}
+    #searchButton {
+        padding: 2% 1%;
+        width: 15%;
+    }
+    
+    h1 {
+        font-size: 3.5em;
+    }
+    
+    h2 {
+        font-size: 1.9em;
+    }
+    
+    #wrapper {
+        margin-top: 2%;
+    }
+    
+    #beerResult {
+        width: 60%;
+    }
+}
+    
